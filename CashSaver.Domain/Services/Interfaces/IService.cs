@@ -19,6 +19,7 @@ namespace CashSaver.Domain.Services.Interfaces
         void Remove(T? entityToDelete);
         bool Save();
         void Update(T entityToUpdate);
+        void Update(Guid id);
         void Upsert(T entityToUpsert);
     }
 }

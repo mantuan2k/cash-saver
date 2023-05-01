@@ -13,7 +13,7 @@ namespace CashSaver.Repositories.Interfaces
         IEnumerable<T> Get(Expression<Func<T, bool>> filter);
         IQueryable<T> GetAll();
         IQueryable<T> GetAllAsNoTracking();
-        Bill? GetById(Guid id);
+        T? GetById(Guid id);
         IQueryable<T> Query(Expression<Func<T, bool>> filter);
         IQueryable<T> QueryAsNoTracking(Expression<Func<T, bool>> filter);
         void Remove(Guid id);

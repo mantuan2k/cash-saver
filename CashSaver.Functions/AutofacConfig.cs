@@ -12,7 +12,7 @@ namespace CashSaver.Functions
         {
             DependencyInjection.Initialize(builder =>
             {
-                builder.RegisterModule(new CashSaverInjectRepositoryModule());
+                builder.RegisterModule(new CashSaverInjectRepositoryModule() { unitOfWork = true }) ;
                 builder.RegisterModule(new CashSaverInjectServiceModule());
             }, functionName);
         }

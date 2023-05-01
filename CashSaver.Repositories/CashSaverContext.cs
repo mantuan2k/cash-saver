@@ -2,7 +2,6 @@
 using CashSaver.Repositories.DataSeed;
 using CashSaver.Repositories.Mapping;
 using Microsoft.EntityFrameworkCore;
-using System.Data.SqlClient;
 
 namespace CashSaver.Repositories
 {

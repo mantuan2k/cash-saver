@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CashSaver.Domain\CashSaver.Domain.csproj" />
+    <ProjectReference Include="..\CashSaver.Repositories\CashSaver.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashSaver.Repositories", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashSaver.Functions", "CashSaver.Functions\CashSaver.Functions.csproj", "{D7AB92F4-2A9B-4C4E-9068-EE73BADA8C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashSaver.Services", "CashSaver.Services\CashSaver.Services.csproj", "{791E16B7-4537-4D72-B88D-D9BCA910ED98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashSaver.Services", "CashSaver.Services\CashSaver.Services.csproj", "{791E16B7-4537-4D72-B88D-D9BCA910ED98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

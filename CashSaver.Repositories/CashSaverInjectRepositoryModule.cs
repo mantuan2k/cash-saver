@@ -6,10 +6,16 @@ namespace CashSaver.Repositories
 {
     public class CashSaverInjectRepositoryModule : Module
     {
+        public bool unitOfWork { get; set; }
+
         protected override void Load(ContainerBuilder builder)
         {
+            if (unitOfWork)
+            {
+                builder.Register(c => new UnitOfWork(new CashSaverContext())).As<IUnitOfWork>().InstancePerLifetimeScope();
+            }
             builder.RegisterType<CashSaverContext>().As<CashSaverContext>();
-            builder.Register(c => new BillRepository(new CashSaverContext())).As<IRepository<Bill>>();
+            builder.RegisterType<BillRepository>().As<IRepository<Bill>>();
             base.Load(builder);
         }
     }
