@@ -9,7 +9,7 @@ namespace CashSaver.Repositories
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<CashSaverContext>().As<CashSaverContext>();
-            builder.Register(c => new BillRepository(new CashSaverContext())).As<IService<Bill>>();
+            builder.Register(c => new BillRepository(new CashSaverContext())).As<IRepository<Bill>>();
             base.Load(builder);
         }
     }

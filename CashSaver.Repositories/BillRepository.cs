@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace CashSaver.Repositories
 {
-    public class BillRepository : IService<Bill>
+    public class BillRepository : IRepository<Bill>
     {
         protected readonly DbContext _context;
         protected DbSet<Bill> _dbSet;

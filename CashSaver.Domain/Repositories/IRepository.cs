@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace CashSaver.Repositories.Interfaces
 {
-    public interface IService<T>
+    public interface IRepository<T>
     {
         void Add(T entity);
         void AddMany(IEnumerable<T> entities);

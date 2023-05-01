@@ -1,6 +1,6 @@
 using AzureFunctions.Autofac;
 using CashSaver.Domain;
-using CashSaver.Repositories.Interfaces;
+using CashSaver.Domain.Services.Interfaces;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;

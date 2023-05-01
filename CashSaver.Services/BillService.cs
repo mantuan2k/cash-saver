@@ -7,9 +7,9 @@ namespace CashSaver.Services
 {
     public class BillService : Domain.Services.Interfaces.IService<Bill>
     {
-        protected readonly Repositories.Interfaces.IService<Bill> _billRepository;
+        protected readonly IRepository<Bill> _billRepository;
 
-        public BillService(Repositories.Interfaces.IService<Bill> billRepository)
+        public BillService(IRepository<Bill> billRepository)
         {
             _billRepository = billRepository;
         }
