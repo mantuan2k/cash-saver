@@ -1,10 +1,9 @@
 ﻿using Autofac;
 using AzureFunctions.Autofac.Configuration;
 using CashSaver.Repositories;
-using CashSaver.Repositories.Interfaces;
 using CashSaver.Services;
 
-namespace CashSaver.Functions
+namespace CashSaver.Function
 {
     public class AutofacConfig
     {
